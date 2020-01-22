@@ -46,25 +46,21 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         use: [
           {
-            loader: 'style-loader',
-            options: { sourceMap: true },
+            loader: 'style-loader'
           },
           {
-            loader: 'css-loader',
-            options: { sourceMap: true },
+            loader: 'css-loader'
           },
           {
             loader: 'postcss-loader',
             options: {
-              sourceMap: true,
               plugins: [
                 autoprefixer,
               ],
             },
           },
           {
-            loader: 'sass-loader',
-            options: { sourceMap: true },
+            loader: 'sass-loader'
           },
         ],
       },
